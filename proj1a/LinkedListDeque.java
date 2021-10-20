@@ -117,4 +117,5 @@ public class LinkedListDeque<T> {
         }
         return getRecursive(p.next, index - 1);
     }
+
 }
