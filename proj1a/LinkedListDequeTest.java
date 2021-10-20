@@ -1,3 +1,6 @@
+import org.junit.Assert;
+import org.junit.Test;
+
 /** Performs some basic linked list tests. */
 public class LinkedListDequeTest {
 	
