@@ -93,8 +93,8 @@ public class ArrayDeque<T> {
 
     public T get(int index) {
         if (index <= size - 1) {
-            int currentFirst = nextFirst + 1 == maxSize ? 0 : nextFirst + 1;
-            int needPos = currentFirst + index >= maxSize ? currentFirst + index - maxSize : currentFirst + index;
+            int current = nextFirst + 1 == maxSize ? 0 : nextFirst + 1;
+            int needPos = current + index >= maxSize ? current + index - maxSize : current + index;
             return element[needPos];
         }
         return null;
