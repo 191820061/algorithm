@@ -102,10 +102,11 @@ public class ArrayDeque<T> {
 
     private void expandArray() {
         T[] copy = (T[]) new Object[maxSize * 2];
-        int currentFirst = nextFirst + 1 == maxSize ? 0 : nextFirst + 1;
+        int currentFirst = 3;
         for (int i = 0; i < size; i++) {
             copy[i + currentFirst] = get(i);
         }
+        nextFirst = 2;
         nextLast = currentFirst + size;
         maxSize = maxSize * 2;
         element = copy;
