@@ -13,27 +13,27 @@ public class Palindrome {
     }
 
     private boolean isPalindrome(Deque<Character> deque) {
-        if (deque.size()==1||deque.size()==0){
+        if (deque.size() == 1 || deque.size() == 0) {
             return true;
         }
-        if (deque.removeFirst()!=deque.removeLast()){
+        if (deque.removeFirst() != deque.removeLast()) {
             return false;
         }
         return isPalindrome(deque);
     }
 
-    public boolean isPalindrome(String word, CharacterComparator cc){
+    public boolean isPalindrome(String word, CharacterComparator cc) {
         Deque<Character> deque = wordToDeque(word);
-        return isPalindrome(deque,cc);
+        return isPalindrome(deque, cc);
     }
 
-    private boolean isPalindrome(Deque<Character> deque,CharacterComparator cc){
-        if (deque.size()==1||deque.size()==0){
+    private boolean isPalindrome(Deque<Character> deque, CharacterComparator cc) {
+        if (deque.size() == 1 || deque.size() == 0) {
             return true;
         }
-        if (!cc.equalChars(deque.removeFirst(),deque.removeLast())){
+        if (!cc.equalChars(deque.removeFirst(), deque.removeLast())) {
             return false;
         }
-        return isPalindrome(deque,cc);
+        return isPalindrome(deque, cc);
     }
 }

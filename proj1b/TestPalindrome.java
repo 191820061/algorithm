@@ -19,14 +19,14 @@ public class TestPalindrome {
 
     @Test
     public void testIsPalindrome() {
-        Assert.assertFalse(palindrome.isPalindrome("cac",one));
-        Assert.assertFalse(palindrome.isPalindrome("maam",one));
-        Assert.assertFalse(palindrome.isPalindrome("adkjkda",one));
-        Assert.assertFalse(palindrome.isPalindrome("racecar",one));
-        Assert.assertTrue(palindrome.isPalindrome("a",one));
-        Assert.assertFalse(palindrome.isPalindrome("noon",one));
-        Assert.assertTrue(palindrome.isPalindrome("unhot",one));
-        Assert.assertTrue(palindrome.isPalindrome("flake",one));
+        Assert.assertFalse(palindrome.isPalindrome("cac", one));
+        Assert.assertFalse(palindrome.isPalindrome("maam", one));
+        Assert.assertFalse(palindrome.isPalindrome("adkjkda", one));
+        Assert.assertFalse(palindrome.isPalindrome("racecar", one));
+        Assert.assertTrue(palindrome.isPalindrome("a", one));
+        Assert.assertFalse(palindrome.isPalindrome("noon", one));
+        Assert.assertTrue(palindrome.isPalindrome("unhot", one));
+        Assert.assertTrue(palindrome.isPalindrome("flake", one));
     }
 
     @Test

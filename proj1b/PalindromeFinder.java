@@ -11,7 +11,7 @@ public class PalindromeFinder {
 
         while (!in.isEmpty()) {
             String word = in.readString();
-            if (word.length() >= minLength && palindrome.isPalindrome(word,one)) {
+            if (word.length() >= minLength && palindrome.isPalindrome(word, one)) {
                 System.out.println(word);
             }
         }
