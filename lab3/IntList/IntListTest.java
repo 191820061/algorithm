@@ -1,5 +1,6 @@
 import static org.junit.Assert.*;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class IntListTest {
@@ -66,8 +67,20 @@ public class IntListTest {
         assertEquals(IntList.of(1, 2, 3), A);
     }
 
-    /** If you're running this from the command line, you'll need
-      * to add a main method. See ArithmeticTest.java for an
-      * example. */
+    /**
+     * If you're running this from the command line, you'll need
+     * to add a main method. See ArithmeticTest.java for an
+     * example.
+     */
+
+    @Test(timeout = 1000)
+    public void testReverse() {
+        IntList A = IntList.of(4, 5, 6, 7, 8, 9);
+        IntList exp = IntList.of(9, 8, 7, 6, 5, 4);
+        IntList B = new IntList();
+        Assert.assertNotEquals(A, IntList.reverse(A));
+        Assert.assertEquals(exp, A);
+        Assert.assertEquals(null,IntList.reverse(B));
+    }
 
 }
